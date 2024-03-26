@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #333;
+}
+.nav {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    height:40px;
+    width: 100%;
+}
+.nav h1 {
+    display:inline;
+    padding-left: 2%;
+    line-height: 2.5rem;
+}
+.nav ul {
+    display: inline;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.nav-section {
+    height:40px;
+    width:auto;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    margin-right: 40px;
+}
+.nav-container {
+    height:100%;
+    width:fit-content;
+    top:0;
+    bottom: 0;
+    line-height: 2.5rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #333;
+    flex: 1;
+    transition: background-color 0.2s ease-in-out;
+
+}
+.nav-container:hover {
+    background-color: #777;
+    transition: border 0.5s ease-in-out;
+    border: 1px rgb(189, 189, 189) solid;
+    color:rgb(255, 192, 75);
+}
+.nav-container.selected {
+    background-color: #777;
+    transition: border 0.2s ease-in-out;
+    border: 1px rgb(255, 192, 75) solid;
+    color:rgb(255, 192, 75);
+}
+
+.nav-container.selected a {
+    color: rgb(255, 192, 75); /* Change text color for selected item */
+}
+.nav li {
+    display: inline;
+    margin: 20px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav li a:hover {
+    color: rgb(255, 192, 75);
+    background-color: transparent;
+}
+.nav li a:visited {
+    color:#fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+.hero-section {
+    background-image: url("/hotel/images/showcase.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-section {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section h2 {
+    font-size:80px;
+    color: #fff;
+}
+section p {
+    color:#fff;
+}
+section h2 span {
+    color:rgb(255, 192, 75) ;
+}
+.hero-section button {
+    margin: 20px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 9px;
+    transition: background-color 0.2s ease-in-out;
+}
+.hero-section button:hover {
+    background-color: #777;
+    color: rgb(255, 192, 75);
+}
+.history-section {
+    position: relative;
+    height: fit-content;
+}
+.history-section img {
+    display: inline;
+    width:40%;
+}
+.history-section .content {
+    display: inline;
+    background-color: #333;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.history-section h3 {
+    padding: 20px;
+    color:#fff
+}
+.history-section span {
+    color: rgb(255, 192, 75);
+}
+.history-section p {
+    color: #fff;
+    padding: 10px;
+    overflow: visible;
+}
+.history-section button {
+    height: 30px;
+    font-size: 16px;
+    padding:15px;
+    text-align: center;
+    line-height: .2em;
+    border-radius: 9px;
+}
+.history-section button:hover {
+    background-color: rgb(255, 192, 75);
+    border-radius: 9px;
+    padding:15px;
+    transition: background-color 0.2s ease-in-out;
+}
+.benefit-content {
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    width:100%;
+    height: fit-content;
+
+}
+.content-card {
+    width:33%;
+    height: 300px;
+    position:relative;
+    background-color: rgb(255, 192, 75);;
+    display: inline-block;
+    padding:20px;
+    text-align: center;
+    
+}
+footer {
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.card {
+    padding: 20px;
+}
+#card1 {
+    background-color: #fff;
+}
+#card1 p {
+    color: #333;
+}
+#card2 p {
+    color: #333;
+}
+#card3 {
+    background-color: #fff;
+}
+#card3 p {
+    color: #333;
+}
